@@ -38,3 +38,9 @@ print (ages)
 students=["Arun","Rajesh","Harish","Akansha","Luxmi","Varsha"]
 students.sort()
 print(students)
+
+#slicing
+
+#list_name[start:end+1]
+print(students[1:4])
+print(students[-4:-1])
