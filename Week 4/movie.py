@@ -48,7 +48,7 @@ def play():
         if turn%2==0:
             #player 1
             print(p1name,' Your turn ')
-            picked_movie = random.choice(movies)
+            picked_movie = random.choice(movies).lower()
             qn=create_question(picked_movie)
             print (qn)
             modified_qn=qn
@@ -64,7 +64,7 @@ def play():
                     d=input("press 1 to guess the movie or 2 to unlock another letter")
                     if d=='1':
                         ans=input('Your answer: ')
-                        if ans==picked_movie:
+                        if ans.lower()==picked_movie:
                             pp1=pp1+1
                             print('Correct')
                             not_said=False
@@ -74,7 +74,7 @@ def play():
                 else:
                     print(letter,' not found ')
             c=input('Press 1 to continue or 0 to quit')
-            if c==0:
+            if c=='0':
                 print(p1name,' Your score : ',pp1)
                 print(p2name,' Your score : ',pp2)
                 print(' Thanks for playing')
@@ -83,7 +83,7 @@ def play():
         else:
             #player 2
             print(p2name,' Your turn ')
-            picked_movie = random.choice(movies)
+            picked_movie = random.choice(movies).lower()
             qn=create_question(picked_movie)
             print (qn)
             modified_qn=qn
@@ -99,7 +99,7 @@ def play():
                     d=input("press 1 to guess the movie or 2 to unlock another letter")
                     if d=='1':
                         ans=input('Your answer: ')
-                        if ans==picked_movie:
+                        if ans.lower()==picked_movie:
                             pp2=pp2+1
                             print('Correct')
                             not_said=False
@@ -109,7 +109,7 @@ def play():
                 else:
                     print(letter,' not found ')
             c=input('Press 1 to continue or 0 to quit')
-            if c==0:
+            if c=='0':
                 print(p1name,' Your score : ',pp1)
                 print(p2name,' Your score : ',pp2)
                 print(' Thanks for playing')
