@@ -31,6 +31,7 @@ while(j<10):
         else:
             print("Player Win")
             dont_swap+=1
+    j+=1
 
 print (swap)
 print(dont_swap)
