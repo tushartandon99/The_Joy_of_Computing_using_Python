@@ -11,7 +11,7 @@ def evolve(x):
         else:
             x[ind]='0'
 
-with open("dna.txt","r") as myfile:
+with open("D:\coding\python\Joy of computing using python\Week 3\dna.txt","r") as myfile:
     x=myfile.read()
     x=list(x)
 for i in range(0,10000):
