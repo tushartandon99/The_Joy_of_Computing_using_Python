@@ -1,11 +1,11 @@
 import string
 dict ={}
 data=""
-file=open("op_file.txt","w")
+file=open("D:\coding\python\Joy of computing using python\Week 6\op_file.txt","w")
 for i in range (len(string.ascii_letters)):
     dict[string.ascii_letters[i]]=string.ascii_letters[i-1]
 print (dict)
-with open ("demo.text") as f:
+with open ("D:\coding\python\Joy of computing using python\Week 6\demo.text") as f:
     while True:
         c=f.read(1)
         if not c:
